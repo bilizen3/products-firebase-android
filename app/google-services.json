@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "1085374176679",
+    "firebase_url": "https://products-429f3.firebaseio.com",
+    "project_id": "products-429f3",
+    "storage_bucket": "products-429f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085374176679:android:241edf49d5b666ab",
+        "android_client_info": {
+          "package_name": "com.flores.products_firebase_android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAsae8v0SWGHXDpU8KCaN2nNgetYJERKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085374176679-08s5o6rh2sacg53gdde80n6qfs0r6m0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".RealtimeDatabaseActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/name"
+            android:hint="Name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/value"
+            android:hint="Value"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSend"
+            android:text="Send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextGetName"
+            android:hint="name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonGetData"
+            android:text="Get Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvData"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
