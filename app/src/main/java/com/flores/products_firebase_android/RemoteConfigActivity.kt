@@ -13,7 +13,7 @@ class RemoteConfigActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_remote_config)
-        remoteConfig= FirebaseRemoteConfig.getInstance()
+        remoteConfig = FirebaseRemoteConfig.getInstance()
 
         val configSettings = FirebaseRemoteConfigSettings.Builder()
             .setDeveloperModeEnabled(BuildConfig.DEBUG)
@@ -26,16 +26,21 @@ class RemoteConfigActivity : AppCompatActivity() {
         remoteConfig.fetchAndActivate()
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    val updated = task.getResult()
+                    val updated = task.result
                 } else {
                 }
-                displayWelcomeMessage()
+                showMessage()
             }
-
     }
 
-    private fun displayWelcomeMessage() {
-        val colorText = remoteConfig.getString("ColorTheme")
-        tvContent.text = colorText
+    private fun showMessage() {
+        val contentText = remoteConfig.getString("Text")
+        val colorText = remoteConfig.getString("Color")
+        tvContent.text = contentText
+        when (colorText) {
+            "Red" -> tvContent.setTextColor(resources.getColor(R.color.colorAccent))
+            "Green" -> tvContent.setTextColor(resources.getColor(R.color.colorPrimaryDark))
+            else -> tvContent.setTextColor(resources.getColor(R.color.colorPrimary))
+        }
     }
 }
