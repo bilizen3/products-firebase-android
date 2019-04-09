@@ -10,8 +10,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         realtimeDatabase.setOnClickListener {
             startActivity(Intent(this, RealtimeDatabaseActivity::class.java))
         }
+
+        remoteConfig.setOnClickListener {
+            startActivity(Intent(this, RemoteConfigActivity::class.java))
+        }
+
     }
 }

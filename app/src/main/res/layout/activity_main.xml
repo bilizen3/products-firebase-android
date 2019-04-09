@@ -13,4 +13,10 @@
             android:layout_height="wrap_content"
             android:text="Realtime Database"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/remoteConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remote Config"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
