@@ -4,12 +4,28 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".CrashlyticsActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnCrash"
-            android:text="crash"
+    <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etImplicit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCrashImplicit"
+            android:text="crash implicito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etExplicit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCrashExplicit"
+            android:text="crash explicito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 </androidx.appcompat.widget.LinearLayoutCompat>
