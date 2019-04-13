@@ -43,4 +43,5 @@ class RemoteConfigActivity : AppCompatActivity() {
             else -> tvContent.setTextColor(resources.getColor(R.color.colorPrimary))
         }
     }
+
 }
