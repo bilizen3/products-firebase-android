@@ -19,5 +19,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, RemoteConfigActivity::class.java))
         }
 
+        btnCrashlytics.setOnClickListener {
+            startActivity(Intent(this, CrashlyticsActivity::class.java))
+        }
+
     }
 }
