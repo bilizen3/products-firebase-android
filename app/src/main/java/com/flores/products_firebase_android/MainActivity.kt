@@ -23,5 +23,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, CrashlyticsActivity::class.java))
         }
 
+        btnStorage.setOnClickListener {
+            startActivity(Intent(this, StorageActivity::class.java))
+        }
+
     }
 }
