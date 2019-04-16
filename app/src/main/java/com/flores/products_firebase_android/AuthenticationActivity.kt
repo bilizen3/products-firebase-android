@@ -15,7 +15,10 @@ class AuthenticationActivity : AppCompatActivity() {
         setContentView(R.layout.activity_authentication)
         btnSingIn.setOnClickListener {
             firebaseAuth
-                .signInWithEmailAndPassword(etUser.text.toString(), etPassword.text.toString())
+                .signInWithEmailAndPassword(
+                    etUser.text.toString().trim()
+                    , etPassword.text.toString().trim()
+                )
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         showToast("Authentication successful.")
