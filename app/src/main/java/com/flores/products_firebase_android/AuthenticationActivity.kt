@@ -2,7 +2,7 @@ package com.flores.products_firebase_android
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import com.flores.products_firebase_android.util.showToast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_authentication.*
 
@@ -18,11 +18,9 @@ class AuthenticationActivity : AppCompatActivity() {
                 .signInWithEmailAndPassword(etUser.text.toString(), etPassword.text.toString())
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        Toast.makeText(baseContext, "Authentication successful.",
-                            Toast.LENGTH_SHORT).show()
+                        showToast("Authentication successful.")
                     } else {
-                        Toast.makeText(baseContext, "Authentication failed.",
-                            Toast.LENGTH_SHORT).show()
+                        showToast("Authentication failed.")
                     }
                 }
         }
