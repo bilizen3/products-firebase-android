@@ -31,4 +31,10 @@
             android:layout_height="wrap_content"
             android:text="Storage"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAuthentication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Authentication"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>

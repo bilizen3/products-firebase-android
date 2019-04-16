@@ -27,5 +27,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, StorageActivity::class.java))
         }
 
+        btnAuthentication.setOnClickListener {
+            startActivity(Intent(this, AuthenticationActivity::class.java))
+        }
+
     }
 }
